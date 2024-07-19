@@ -72,21 +72,29 @@ for (String item : set) {
 
 ### HashMap
 ```java
-import java.util.HashMap;
+    // Create a new HashMap
+    HashMap<String, Integer> map = new HashMap<>();
 
-HashMap<String, Integer> map = new HashMap<>();
-map.put("Key", 1);                // Add or update
-int value = map.get("Key");       // Get value
-map.remove("Key");                // Remove pair
-boolean containsKey = map.containsKey("Key");  // Check if key exists
-boolean containsValue = map.containsValue(1);  // Check if value exists
-int size = map.size();            // Get size
-map.clear();                      // Remove all pairs
+    // Basic operations
+    map.put("Key", 1);                      // Add or update
+    int value = map.get("Key");             // Get value
+    map.remove("Key");                      // Remove pair
+    boolean containsKey = map.containsKey("Key");    // Check if key exists
+    boolean containsValue = map.containsValue(1);    // Check if value exists
+    int size = map.size();                  // Get size
+    map.clear();                            // Remove all pairs
 
-// Iterate over map
-for (Map.Entry<String, Integer> entry : map.entrySet()) {
-    System.out.println(entry.getKey() + ": " + entry.getValue());
-}
+    // Additional methods
+    int defaultValue = map.getOrDefault("Key", 0);   // Get value or default if key doesn't exist
+    boolean isEmpty = map.isEmpty();        // Check if map is empty
+
+    // Iterating over the map
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+        System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+    }
+
+    // Using forEach (Java 8+)
+    map.forEach((key, val) -> System.out.println("Key: " + key + ", Value: " + val));
 ```
 
 ### Heap (Priority Queue)
