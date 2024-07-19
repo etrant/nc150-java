@@ -108,10 +108,13 @@ PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a,b)->
 
 // Basic operations
 minHeap.add(5);        // Add element
+minHeap.addAll(Arrays.asList(4, 2, 5));
 int top = minHeap.peek(); // Get top element without removing
 int pop = minHeap.poll(); // Remove and return top element
 int size = minHeap.size(); // Get size
 boolean empty = minHeap.isEmpty(); // Check if empty
+
+
 ```
 
 ## File I/O
