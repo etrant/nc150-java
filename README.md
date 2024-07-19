@@ -71,6 +71,22 @@ for (Map.Entry<String, Integer> entry : map.entrySet()) {
 }
 ```
 
+### Heap (Priority Queue)
+```java
+// Min Heap (default)
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+// Max Heap
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+// Basic operations
+minHeap.add(5);        // Add element
+int top = minHeap.peek(); // Get top element without removing
+int pop = minHeap.poll(); // Remove and return top element
+int size = minHeap.size(); // Get size
+boolean empty = minHeap.isEmpty(); // Check if empty
+```
+
 ## File I/O
 ```java
 import java.io.*;
