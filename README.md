@@ -11,6 +11,24 @@ boolean myBool = true;
 String myString = "Hello";
 ```
 
+### Wrapper Classes
+```java 
+    Integer myInt = 5;
+    Double myDouble = 5.99;
+    Character myChar = 'A';
+    Byte myByte = 100;
+    Boolean myBoolean = true;
+
+     // Wrapper classes have the ability to be null
+    Integer nullInt = null;
+
+    // Wrappers have helpful methods
+    Integer myInt = Integer.parseInt(String s);
+    Integer myInt = Integer.valueOf(String s);
+    Integer myInt = Integer.valueOf(primitive p);
+    String intString = myInt.toString();
+```
+
 ### Arrays
 ```java
 int[] myArray = new int[5];
@@ -139,10 +157,7 @@ String trimmed = str.trim();      // Remove leading/trailing whitespace
 String replaced = str.replace('o', '0');     // Replace char
 String replacedAll = str.replaceAll("o", "0"); // Replace all occurrences (regex)
 String replacedFirst = str.replaceFirst("o", "0"); // Replace first occurrence (regex)
-```
 
-### Character Array and String Conversion
-```java
 // String to char array
 String str = "Hello";
 char[] charArray = str.toCharArray();
