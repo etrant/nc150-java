@@ -104,6 +104,7 @@ PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
 // Max Heap
 PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a,b)->(b.getValue()-a.getValue()));
 
 // Basic operations
 minHeap.add(5);        // Add element
